@@ -1,0 +1,69 @@
+&CONTROL
+    calculation   = "scf"
+    max_seconds   =  8.64000e+04
+/
+
+&SYSTEM
+    degauss                   =  1.00000e-02
+    ecutrho                   =  7.00000e+02
+    ecutwfc                   =  7.00000e+01
+    ibrav                     = 0
+    nat                       = 22
+    nspin                     = 1
+    ntyp                      = 3
+    occupations               = "smearing"
+    smearing                  = "gaussian"
+    starting_magnetization(1) =  0.00000e+00
+    starting_magnetization(2) =  0.00000e+00
+    starting_magnetization(3) =  2.00000e-01
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+K_POINTS {automatic}
+ 1 20  1  0 0 0
+
+CELL_PARAMETERS {angstrom}
+ 21.000000   0.000000   0.000000
+  0.000000   4.350000   0.000000
+  0.000000   0.000000  16.000000
+
+
+ATOMIC_SPECIES
+C      12.01070  C.pbe-n-kjpaw_psl.1.0.0.UPF
+H       1.00794  H.pbe-kjpaw_psl.1.0.0.UPF
+Cu     63.54600  Cu.pbe-spn-kjpaw_psl.1.0.0.UPF
+
+
+ATOMIC_POSITIONS {crystal}
+C       0.309945   0.175651   0.500000
+C       0.427390   0.173729   0.500000
+C       0.544309   0.173557   0.500000
+C       0.661476   0.172296   0.500000
+C       0.252977   0.349305   0.500000
+C       0.368458   0.341607   0.500000
+C       0.485797   0.340798   0.500000
+C       0.603167   0.341547   0.500000
+C       0.717546   0.353883   0.500000
+C       0.252980   0.666561   0.500000
+C       0.368458   0.674213   0.500000
+C       0.485798   0.674936   0.500000
+C       0.603174   0.674095   0.500000
+C       0.717555   0.661654   0.500000
+C       0.309952   0.840195   0.500000
+C       0.427394   0.842051   0.500000
+C       0.544314   0.842133   0.500000
+C       0.661489   0.843297   0.500000
+H       0.207096   0.783097   0.500000
+H       0.207080   0.232854   0.500000
+Cu      0.805852   0.758402   0.500000
+Cu      0.805687   0.254339   0.500000
+
+
+
